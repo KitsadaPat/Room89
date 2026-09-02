@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สินค้าทั้งหมด - Room Scent</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">ROOM SCENT</a>
+      <ul class="nav-links">
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="product.html" class="active">สินค้าทั้งหมด</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Product Section -->
+  <main class="product-page container">
+    <header class="page-header">
+      <h1>รายการสินค้า</h1>
+      <p>เลือกสรรสเปรย์ปรับอากาศและเทียนหอมในรูปแบบที่คุณชื่นชอบ</p>
+    </header>
+
+    <!-- Element ID สำหรับให้ script.js จัดการ Filter -->
+    <div id="filter-bar" class="filter-bar"></div>
+
+    <!-- Element ID สำหรับให้ script.jsRender การ์ดสินค้า 10 รายการ -->
+    <div id="product-list" class="product-grid"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Room Scent. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

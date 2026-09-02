@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Room Spray Fresh เล็ก 30ml",
+    "image": "images/room-spray-fresh-30ml.jpg",
+    "size": "30ml",
+    "price": 89,
+    "mood": "Fresh"
+  },
+  {
+    "name": "Room Spray Relax เล็ก 30ml",
+    "image": "images/room-spray-relax-30ml.jpg",
+    "size": "30ml",
+    "price": 89,
+    "mood": "Relax"
+  },
+  {
+    "name": "Room Spray Focus เล็ก 30ml",
+    "image": "images/room-spray-focus-30ml.jpg",
+    "size": "30ml",
+    "price": 89,
+    "mood": "Focus"
+  },
+  {
+    "name": "Room Spray Romance เล็ก 30ml",
+    "image": "images/room-spray-romance-30ml.jpg",
+    "size": "30ml",
+    "price": 89,
+    "mood": "Romance"
+  },
+  {
+    "name": "Room Spray Fresh ใหญ่ 100ml",
+    "image": "images/room-spray-fresh-100ml.jpg",
+    "size": "100ml",
+    "price": 199,
+    "mood": "Fresh"
+  },
+  {
+    "name": "Room Spray Relax ใหญ่ 100ml",
+    "image": "images/room-spray-relax-100ml.jpg",
+    "size": "100ml",
+    "price": 199,
+    "mood": "Relax"
+  },
+  {
+    "name": "Room Spray Focus ใหญ่ 100ml",
+    "image": "images/room-spray-focus-100ml.jpg",
+    "size": "100ml",
+    "price": 199,
+    "mood": "Focus"
+  },
+  {
+    "name": "Room Spray Romance ใหญ่ 100ml",
+    "image": "images/room-spray-romance-100ml.jpg",
+    "size": "100ml",
+    "price": 199,
+    "mood": "Romance"
+  },
+  {
+    "name": "เทียนหอม Relax",
+    "image": "images/candle-relax.jpg",
+    "size": "ขนาดมาตรฐาน",
+    "price": 149,
+    "mood": "Relax"
+  },
+  {
+    "name": "เทียนหอม Romance",
+    "image": "images/candle-romance.jpg",
+    "size": "ขนาดมาตรฐาน",
+    "price": 149,
+    "mood": "Romance"
+  }
+]

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ยืนยันคำสั่งซื้อ — หาย(ใจ)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="index.html">หาย<span class="soft">(ใจ)</span></a>
+  <nav class="site-nav">
+    <a href="index.html">หน้าแรก</a>
+    <a href="product.html">สินค้าทั้งหมด</a>
+  </nav>
+</header>
+
+<section class="order-section">
+  <div class="wrap">
+    <h1>ยืนยันคำสั่งซื้อ</h1>
+    <p>กรอกข้อมูลให้ครบถ้วน ทีมงานจะติดต่อกลับเพื่อยืนยันการจัดส่งและช่องทางชำระเงิน</p>
+
+    <form id="orderForm">
+      <div class="form-row">
+        <div class="field">
+          <label for="customerName">ชื่อลูกค้า</label>
+          <input type="text" id="customerName" name="customerName" required>
+        </div>
+        <div class="field">
+          <label for="contact">เบอร์โทร / Line</label>
+          <input type="text" id="contact" name="contact" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="items">รายการสินค้า</label>
+        <textarea id="items" name="items" required></textarea>
+        <span class="hint">หากต้องการสั่งเพิ่มมากกว่า 1 รายการ สามารถเพิ่มบรรทัดใหม่ได้ในช่องนี้</span>
+      </div>
+
+      <div class="field">
+        <label for="total">จำนวนเงินรวม (บาท)</label>
+        <input type="text" id="total" name="total" inputmode="decimal" required>
+        <span class="hint">ระบบเติมราคาให้อัตโนมัติ หากมีการเพิ่มรายการสินค้า กรุณาแก้ไขยอดรวมให้ถูกต้อง</span>
+      </div>
+
+      <div class="field">
+        <label for="note">หมายเหตุ</label>
+        <textarea id="note" name="note" placeholder="เช่น ที่อยู่จัดส่ง หรือความต้องการเพิ่มเติม"></textarea>
+      </div>
+
+      <button class="submit-btn" type="submit">ยืนยันสั่งซื้อ</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    &copy; 2569 หาย(ใจ) Room Fragrance
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
