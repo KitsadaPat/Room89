@@ -1,66 +1,70 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ยืนยันคำสั่งซื้อ — หาย(ใจ)</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สั่งซื้อสินค้า - Room Scent</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
-<header class="site-header">
-  <a class="logo" href="index.html">หาย<span class="soft">(ใจ)</span></a>
-  <nav class="site-nav">
-    <a href="index.html">หน้าแรก</a>
-    <a href="product.html">สินค้าทั้งหมด</a>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">ROOM SCENT</a>
+      <ul class="nav-links">
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="product.html">สินค้าทั้งหมด</a></li>
+      </ul>
+    </div>
   </nav>
-</header>
 
-<section class="order-section">
-  <div class="wrap">
-    <h1>ยืนยันคำสั่งซื้อ</h1>
-    <p>กรอกข้อมูลให้ครบถ้วน ทีมงานจะติดต่อกลับเพื่อยืนยันการจัดส่งและช่องทางชำระเงิน</p>
+  <!-- Order Form Section -->
+  <main class="order-page container">
+    <div class="form-wrapper">
+      <header class="page-header">
+        <h1>ยืนยันการสั่งซื้อ</h1>
+        <p>กรอกข้อมูลรายละเอียดเพื่อจัดส่งสินค้า Room Scent ถึงมือคุณ</p>
+      </header>
 
-    <form id="orderForm">
-      <div class="form-row">
-        <div class="field">
-          <label for="customerName">ชื่อลูกค้า</label>
-          <input type="text" id="customerName" name="customerName" required>
+      <form id="orderForm" class="custom-form">
+        <div class="form-group">
+          <label for="customerName">ชื่อ-นามสกุล ผู้รับ</label>
+          <input type="text" id="customerName" name="customerName" placeholder="ระบุชื่อและนามสกุล" required>
         </div>
-        <div class="field">
-          <label for="contact">เบอร์โทร / Line</label>
-          <input type="text" id="contact" name="contact" required>
+
+        <div class="form-group">
+          <label for="contact">เบอร์โทรศัพท์ / Line ID</label>
+          <input type="text" id="contact" name="contact" placeholder="ระบุเบอร์โทรศัพท์ หรือ Line ID สำหรับติดต่อ" required>
         </div>
-      </div>
 
-      <div class="field">
-        <label for="items">รายการสินค้า</label>
-        <textarea id="items" name="items" required></textarea>
-        <span class="hint">หากต้องการสั่งเพิ่มมากกว่า 1 รายการ สามารถเพิ่มบรรทัดใหม่ได้ในช่องนี้</span>
-      </div>
+        <div class="form-group">
+          <label for="items">รายการสินค้าที่สั่ง</label>
+          <textarea id="items" name="items" rows="3" placeholder="ระบุรายการสินค้าและจำนวน" required></textarea>
+        </div>
 
-      <div class="field">
-        <label for="total">จำนวนเงินรวม (บาท)</label>
-        <input type="text" id="total" name="total" inputmode="decimal" required>
-        <span class="hint">ระบบเติมราคาให้อัตโนมัติ หากมีการเพิ่มรายการสินค้า กรุณาแก้ไขยอดรวมให้ถูกต้อง</span>
-      </div>
+        <div class="form-group">
+          <label for="total">จำนวนเงินรวม (บาท)</label>
+          <input type="number" id="total" name="total" placeholder="0.00" required>
+        </div>
 
-      <div class="field">
-        <label for="note">หมายเหตุ</label>
-        <textarea id="note" name="note" placeholder="เช่น ที่อยู่จัดส่ง หรือความต้องการเพิ่มเติม"></textarea>
-      </div>
+        <div class="form-group">
+          <label for="note">หมายเหตุเพิ่มเติม</label>
+          <textarea id="note" name="note" rows="2" placeholder="ระบุข้อความเพิ่มเติม (ถ้ามี) เช่น รายละเอียดการจัดส่ง"></textarea>
+        </div>
 
-      <button class="submit-btn" type="submit">ยืนยันสั่งซื้อ</button>
-    </form>
-  </div>
-</section>
+        <button type="submit" class="btn-submit">ยืนยันสั่งซื้อ</button>
+      </form>
+    </div>
+  </main>
 
-<footer class="site-footer">
-  <div class="wrap">
-    &copy; 2569 หาย(ใจ) Room Fragrance
-  </div>
-</footer>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Room Scent. All rights reserved.</p>
+    </div>
+  </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
